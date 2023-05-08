@@ -13,7 +13,7 @@ export const aboutModel = () => {
     server: {
       name: 'Hello-World',
       version: '1.0.0',
-      description: 'The best API in the world'
+      description: 'The best API in the world',
     },
   };
 

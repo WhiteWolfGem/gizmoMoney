@@ -3,6 +3,7 @@ import cors from 'cors';
 
 import dotenv from 'dotenv';
 import serverRouter from './server/server.routes.js';
+import pool from './utils/database.js';
 dotenv.config();
 
 // Configure server
@@ -20,6 +21,7 @@ const server = app.listen(port, (): void => {
 
 process.on('SIGTERM', () => {
   server.close(() => {
+    pool.end();
     console.log('SERVER IS TERMINATED');
   });
 });
