@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { NextFunction, Request, Response, json } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import asyncHandler from '../utils/asyncHandler.js';
 import ServerError from '../utils/error.js';
 import { errorModel, errorLoggingModel, aboutModel } from './server.models.js';

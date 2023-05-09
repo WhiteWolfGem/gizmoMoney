@@ -39,5 +39,4 @@ describe('server.ts', () => {
       .expect('Content-Type', /json/)
       .expect(404);
   });
-
 });
